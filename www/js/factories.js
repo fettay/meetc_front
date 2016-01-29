@@ -68,7 +68,6 @@ angular.module('starter.factories', [])
 	obj.get = function(event_id) {
 		return $http.post('http://meetc.herokuapp.com:80/event/get', {event_id: event_id});
 	}
-	
 	obj.update = function (update_obj) {
 		return $http({
 			method: 'POST',
